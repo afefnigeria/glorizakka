@@ -10,7 +10,26 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
- 
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+ <script>
+// $(document).ready(function(){
+//   $("button").click(function(){
+//     $("#ems1").slideToggle();
+// 	$(this).text($(".ems1").is(':visible')?
+// 'Hide Content' : 'show content');
+//   });
+// });
+
+
+
+$(document).ready(function() {
+  $('#toggle-button').click(function() {
+    $('#content').slideToggle();
+    $(this).text($('#content').is(':visible') ? 'Read less' : 'Read More');
+  });
+});
+</script>
+
 
  
 </head>
@@ -62,22 +81,28 @@
       <div class="col-md-6"> <img class="img-responsive" src="img/about1.png" align=""> </div>
       <div class="col-md-6">
         <h3>About Me</h3>
-        <p> 
+        <p style="text-align: justify;"> 
 			Gloria Zakka is a Scientific officer with over six years of progressive experience at the Nigeria's Federal Ministry of Environment. <br>She currently serves as a Senior Scientific Officer (SSO) in the Department of Climate Change (DCC), where she leads and supports strategic initiatives on Gender-responsive climate action, food system transformation, and Climate Awareness, education and Outreach. 
 		</p> 
          
-        <p>
+        <p style="text-align: justify;">
 			Gloria has contributed to the development and implementation of Nigeria’s National Action Plan on Gender and Climate Change (NAPGCC), integrating gender equity into national climate strategies. She also serves as the Deputy Expert and National Focal Officer to the Climate Commission for the Sahel Region (CCRS) and the Sahel Climate Fund, coordinating Nigeria’s role in regional climate finance and resilience-building efforts.
 
 Gloria’s portfolio includes spearheading actions on food security and climate adaptation, facilitating stakeholder engagement, drafting technical reports, and supporting high-level dialogues. She has represented Nigeria in global forums such as United Nations Framework Convention on Climate Change, Conference of parties, as well as in capacity-building workshops across Africa focused on green economy, gender inclusion, and adaptation leadership.
 
+
+		</p>
+		
+
+
+
+<p id="content" style="display: none; text-align: justify;">
 Academically, Gloria holds an MSc in Environmental Resource Management and is currently pursuing a Ph.D. in Public Policy and Governance, with research focused on the domestication of international climate policies and laws in Nigeria. Her scholarly work explores institutional gaps, implementation challenges, and lessons from comparative global practices, integrating frameworks like Institutional and Resilience Theory.
 
 Beyond the policy space, Gloria is the founder and creative force behind PlanetPassion360, a YouTube and content platform that simplifies environmental issues, tells Africa’s climate stories, and promotes public engagement for sustainable action.
 
-Gloria is a passionate advocate for inclusive, climate-resilient development—merging research, policy, and storytelling to drive systemic change and environmental justice across Africa and the world.
-		</p>
-
+Gloria is a passionate advocate for inclusive, climate-resilient development—merging research, policy, and storytelling to drive systemic change and environmental justice across Africa and the world..</p>
+<button style="height: 30px; border-radius: 10px; width: 100px;" id="toggle-button" class="toggle-button">Read More</button>
 								
 								 
       </div>
@@ -139,6 +164,22 @@ Gloria is a passionate advocate for inclusive, climate-resilient development—m
     <!-- Portfolio Wrapper -->
     <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">  
       <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   animals isotope-item effect-oscar">
+	   
+        <div class="portfolio_img"> 
+		<img src="img/CODE.jpg"  alt="Portfolio 1"> </div> 
+			<figcaption>		
+				<div>
+				  <!-- Modal trigger button -->
+				   
+				  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#childrensDayModal" style="margin-bottom:10px;">Read More</button>
+					<h2>Children's Day  <span>Celebration</span></h2>
+							<p></p>
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+
       <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   animals isotope-item effect-oscar">
 	   
         <div class="portfolio_img"> 
@@ -410,8 +451,8 @@ Gloria is a passionate advocate for inclusive, climate-resilient development—m
     <div class="footer_bottom"><span>Copyright Gloriazakka,    Template by <a href="http://aidoko.com.ng">Aidoko.com.ng</a> </span> </div>
   </div>
 </footer>
+<script src="js/jq_toggle.js"></script>
 
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
 <script type="text/javascript" src="js/jquery.nav.js"></script> 
@@ -420,6 +461,35 @@ Gloria is a passionate advocate for inclusive, climate-resilient development—m
 <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
 <script type="text/javascript" src="js/wow.js"></script> 
 <script type="text/javascript" src="js/custom.js"></script>
+
+<!-- Modal HTML -->
+<div class="modal fade" id="childrensDayModal" tabindex="-1" role="dialog" aria-labelledby="childrensDayModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="childrensDayModalLabel">Children's Day Celebration</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="max-height: 60vh; overflow-y: auto; text-align: justify;">
+        <img src="img/recieving_award.jpg" alt="Children's Day" style="float:left; width:420px; height:auto; margin:0 20px 10px 0; border-radius:10px;">
+        This year’s Children’s Day was a heartwarming reminder that our future is in incredibly capable hands.<br><br>
+        I had the privilege of serving as a panelist at the Hope Grow Initiative School Program, a special Children’s Day event themed “Building a Better World.” It was more than a celebration—it was a call to action for the next generation to step into their roles as protectors of the planet.<br><br>
+        In a room filled with bright young minds, we explored what climate change means in simple, relatable terms. We discussed practical steps children and families can take every day—like planting trees, reducing waste, conserving water, and being mindful of our everyday habits and their impact on the planet.<br><br>
+        One important point I emphasized was the need to rethink our food choices, especially as it relates to climate change. I encouraged everyone present to consider eating less meat—particularly beef, which has one of the highest carbon footprints of all food sources. Even small dietary shifts can make a big difference when multiplied across communities. It was great to see the students connect this idea to their daily lives with so much curiosity and openness!<br><br>
+        But the most powerful part of the day was the interaction. These students weren’t just listening—they were thinking, questioning, and dreaming. Their voices echoed the urgency of our times and the hope for what’s ahead.<br><br>
+        As I shared my personal journey into environmental advocacy, I emphasized that building a better world doesn’t begin with grand gestures—it begins with small, intentional actions rooted in love for our communities and our Earth.<br><br>
+        PlanetPassion360 is built on this very belief: that when young people are equipped with knowledge and inspired by purpose, they can become changemakers in their homes, schools, and societies.<br><br>
+        To all the young eco-leaders I met today: you are the hope we need, the voices we must amplify, and the visionaries who will shape a greener, fairer, and more sustainable world.<br><br>
+        Happy Children’s Day 2025! Let’s keep building a better world—together.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn " data-dismiss="modal" style="background-color: green; color: white;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
