@@ -13,6 +13,25 @@ Licence under Creative Commons Attribution 3.0
 ul {
     list-style: none;
 }
+.toggle-button {
+    background: linear-gradient(rgb(0,255,34),green,rgb(22,76,42));
+    height: 50px;
+    color: white;
+    border: #11D25D;
+    /* box-shadow: 5px 2px 15px black; */
+
+}
+.toggle-button:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    
+
+}
 
 .figure {
     margin: 0px;
