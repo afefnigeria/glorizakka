@@ -473,7 +473,7 @@ Gloria is a passionate advocate for inclusive, climate-resilient development—m
         </button>
       </div>
       <div class="modal-body" style="max-height: 60vh; overflow-y: auto; text-align: justify;">
-        <img src="img/Children.jpg" alt="Children's Day" style="float:left; width:420px; height:auto; margin:0 20px 10px 0; border-radius:10px;">
+        <img src="img/children.jpg" alt="Children's Day" style="float:left; width:420px; height:auto; margin:0 20px 10px 0; border-radius:10px;">
         This year’s Children’s Day was a heartwarming reminder that our future is in incredibly capable hands.<br><br>
         I had the privilege of serving as a panelist at the Hope Grow Initiative School Program, a special Children’s Day event themed “Building a Better World.” It was more than a celebration—it was a call to action for the next generation to step into their roles as protectors of the planet.<br><br>
         In a room filled with bright young minds, we explored what climate change means in simple, relatable terms. We discussed practical steps children and families can take every day—like planting trees, reducing waste, conserving water, and being mindful of our everyday habits and their impact on the planet.<br><br>
@@ -490,6 +490,15 @@ Gloria is a passionate advocate for inclusive, climate-resilient development—m
     </div>
   </div>
 </div>
+
+<!-- Add this script before </body> to allow opening the modal via URL hash -->
+<script>
+$(document).ready(function() {
+  if(window.location.hash === "#childrensDayModal") {
+    $('#childrensDayModal').modal('show');
+  }
+});
+</script>
 
 </body>
 </html>
